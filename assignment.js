@@ -47,14 +47,14 @@ function brickCalculator(tier){
 }
 
 
-function tinyFriends(friendList){
-    var tinyFriend = friendList[0];
+function tinyFriend(friendList){
+    var tinyName = friendList[0];
     for(var i = 1; i < friendList.length; i++){
-        if(friendList[i].length < tinyFriend.length){
-            tinyFriend = friendList[i] ;
+        if(friendList[i].length < tinyName.length){
+            tinyName = friendList[i] ;
         }
     }
-    return tinyFriend;
+    return tinyName;
 }
 
 
@@ -64,5 +64,5 @@ var result2 = woodCalculator(4, 2, 3);
 console.log(result2);
 var result3 = brickCalculator(21);
 console.log(result3);
-var result4 = tinyFriends(['Kamal', 'Jamali', 'A. k. M. Sobur', 'Kalu', 'Tomal']);
+var result4 = tinyFriend(['Kamal', 'Jamali', 'A. k. M. Sobur', 'Kalu', 'Tomal']);
 console.log(result4);
